@@ -1,10 +1,21 @@
 <html>
-  <head></head>
+  <head>
+    <style>
+      body {
+        background: <%= background %>
+      }
+    </style>
+  </head>
   <body>
     <form>
       <input type='text' name ='guess'/>
       <input type='submit' value='Guess!' />
     </form>
-      <%= message %>
+      <p>
+        <%= message %>
+      </p>
+      <p>
+        The SECRET NUMBER is <%= SECRET_NUMBER %>
+      </p>
   </body>
 </html>
